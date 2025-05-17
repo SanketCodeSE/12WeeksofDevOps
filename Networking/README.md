@@ -56,11 +56,8 @@ Task 2: listing protocols and explaining their relevance to DevOps workflows.
 Port: 80
 
 Use in DevOps:
-
 Accessing web servers (e.g., testing staging environments).
-
 API communication between services during CI/CD.
-
 Triggering webhooks in pipelines.
 <br><br>
 
@@ -68,11 +65,8 @@ Triggering webhooks in pipelines.
 Port: 443
 
 Use in DevOps:
-
 Securely accessing services over the web (e.g., GitHub, web dashboards).
-
 Deploying secure web applications.
-
 Enforcing TLS/SSL for production traffic.
 <br><br>
 
@@ -80,11 +74,8 @@ Enforcing TLS/SSL for production traffic.
 Port: 21
 
 Use in DevOps:
-
 Transferring configuration files or artifacts (used less often now).
-
 Legacy systems or devices that still rely on FTP for deployment.
-
 ⚠️ Often replaced by more secure alternatives like SFTP or HTTPS-based uploads.
 <br><br>
 
@@ -92,13 +83,9 @@ Legacy systems or devices that still rely on FTP for deployment.
 Port: 22
 
 Use in DevOps:
-
 Remote access to Linux/Unix servers.
-
 Automating tasks via scripts (Ansible, Fabric, etc.).
-
 Git operations over SSH (e.g., git@github.com:user/repo.git).
-
 Securing CI/CD agents or bastion hosts.
 <br><br>
 
@@ -106,11 +93,8 @@ Securing CI/CD agents or bastion hosts.
 Port: 53 (UDP and TCP)
 
 Use in DevOps:
-
 Resolving domain names to IPs in infrastructure provisioning.
-
 Managing custom DNS entries for internal environments.
-
 Debugging name resolution issues (e.g., with dig, nslookup).
 
 
