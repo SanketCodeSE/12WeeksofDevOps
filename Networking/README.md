@@ -100,6 +100,90 @@ Debugging name resolution issues (e.g., with dig, nslookup).
 
 
 <br><br><br><br><br>
+<h1>Task: Write a step-by-step guide on how to create and configure Security Groups.</h1>
+
+
+🔐 What is a Security Group?
+A Security Group in AWS acts as a virtual firewall that controls inbound and outbound traffic to your EC2 instances and other resources.
+<br><br>
+<h3>Step to create and configure Security Groups. </h3>
+🧩 Step 1: Log in to AWS Console
+Go to: https://console.aws.amazon.com
+Sign in with your IAM or root credentials.
+<br><br>
+
+🔧 Step 2: Navigate to EC2 Dashboard
+In the AWS Management Console, search for EC2 in the search bar and click EC2.
+On the left sidebar, scroll down and click Security Groups under Network & Security.
+<br><br>
+
+➕ Step 3: Create a New Security Group
+Click the “Create security group” button.
+Fill in the following:
+Security group name: e.g., web-server-sg
+Description: e.g., Allow HTTP, HTTPS, and SSH
+VPC: Choose the appropriate VPC (usually default if you're unsure)
+<br><br>
+
+🔐 Step 4: Configure Inbound Rules
+Click “Add Rule” for each type of traffic you want to allow.
+Type	Protocol	Port Range	Source
+SSH	TCP	22	My IP (for secure admin access)
+HTTP	TCP	80	0.0.0.0/0 (public web access)
+HTTPS	TCP	443	0.0.0.0/0 (secure web access)
+💡 Tip: Avoid opening SSH (22) to 0.0.0.0/0 in production.
+<br><br>
+
+📤 Step 5: Configure Outbound Rules (Optional)
+By default, all outbound traffic is allowed.
+You can restrict this if needed (e.g., block external internet access).
+<br><br>
+
+🧱 Step 6: Review and Create
+Double-check your settings and click “Create security group”.
+<br><br>
+
+🔗 Step 7: Attach Security Group to an EC2 Instance
+Go to EC2 Instances.
+Select your instance → Click Actions > Security > Change security groups.
+Select your new security group (web-server-sg) and click Apply.
+<br><br>
+
+🧪 Step 8: Test Your Configuration
+Try connecting via SSH (ssh ec2-user@your-ec2-ip)
+Visit your public IP in a browser to check HTTP/HTTPS access.
+
+
+<br><br><br><br><br>
+<h1>Task 4: Create a cheat sheet explaining the purpose and usage of each command.</h1>
+
+🧠 Networking Commands Cheat Sheet:
+
+🔄 1. ping – Check Connectivity
+
+Purpose:Tests if a host is reachable and measures round-trip time.
+<br><br>
+🛣️ 2. traceroute / tracert – Trace Packet Path
+
+Purpose:Shows the path (hops) packets take from your machine to a destination.
+<br><br>
+📊 3. netstat – Network Statistics
+
+Purpose:Displays network connections, listening ports, routing tables, and more.
+<br><br>
+🌐 4. curl – Make HTTP(S) Requests
+
+Purpose:Transfers data to/from a server using protocols like HTTP, HTTPS, FTP, etc.
+<br><br>
+🌍 5. dig / nslookup – DNS Lookup Tools
+🔍 dig (Linux/macOS)
+
+Purpose: Query DNS servers for information about hostnames.
+<br><br>
+🔍 6. nslookup (Windows/Linux)
+
+Purpose: Interactively query DNS to resolve hostnames.
+
 
 
 
