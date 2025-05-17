@@ -1,1 +1,12 @@
-Task 1
+Task 1: Write examples of how each layer applies to real-world scenarios (e.g., HTTP at the Application Layer, TCP at the Transport Layer).
+
+| **Layer**           | **Function**                                 | **Real-World Examples**                                                                                                                                                                            |
+| ------------------- | -------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **7. Application**  | Interface between user and network services  | - **HTTP/HTTPS** for web browsing (e.g., visiting a website)<br>- **SMTP/IMAP** for email services (e.g., Gmail)<br>- **FTP** for file transfers                                                   |
+| **6. Presentation** | Data translation, encryption, compression    | - **SSL/TLS encryption** (used in HTTPS for secure websites)<br>- **JPEG, MP4** file formats (data encoding/decoding)<br>- **Compression** tools (e.g., WinZip or video compression for streaming) |
+| **5. Session**      | Manages sessions or connections between apps | - **Login sessions** on websites<br>- **VoIP calls** maintaining connection state<br>- **Remote desktop** sessions (RDP)                                                                           |
+| **4. Transport**    | Reliable data transfer with error checking   | - **TCP** ensuring complete data delivery (e.g., loading a full webpage)<br>- **UDP** used in **video streaming**, **gaming**, or **VoIP** (less overhead)                                         |
+| **3. Network**      | Determines path for data to travel           | - **IP (Internet Protocol)** addresses to route packets (e.g., sending a message to a remote server)<br>- **Routers** forwarding data based on destination IP                                      |
+| **2. Data Link**    | Error detection and MAC addressing           | - **Ethernet/Wi-Fi** MAC addresses used in LAN communication<br>- **Switches** directing traffic based on MAC addresses                                                                            |
+| **1. Physical**     | Transmits raw bits over medium               | - **Cables** (Ethernet, fiber)<br>- **Wi-Fi signals**<br>- **Network Interface Cards (NICs)**                                                                                                      |
+
