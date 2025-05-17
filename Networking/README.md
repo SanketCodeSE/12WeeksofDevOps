@@ -1,4 +1,4 @@
-**Task 1: Write examples of how each layer applies to real-world scenarios**
+<h1>Task 1: Write examples of how each layer applies to real-world scenarios</h1>
 
 <h2>OSI Model Example :</h2>
 
@@ -50,8 +50,8 @@
 <br><br><br><br><br>
 
 
-Task 2: listing protocols and explaining their relevance to DevOps workflows.
-
+<h1>Task 2: listing protocols and explaining their relevance to DevOps workflows.
+</h1>
 🔐 1. HTTP (HyperText Transfer Protocol)
 Port: 80
 
