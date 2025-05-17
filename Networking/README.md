@@ -163,6 +163,7 @@ Visit your public IP in a browser to check HTTP/HTTPS access.
 
 Purpose:Tests if a host is reachable and measures round-trip time.
 <br><br>
+
 🛣️ 2. traceroute / tracert – Trace Packet Path
 
 Purpose:Shows the path (hops) packets take from your machine to a destination.
